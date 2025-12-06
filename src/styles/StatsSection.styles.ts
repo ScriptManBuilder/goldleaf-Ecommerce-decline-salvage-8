@@ -92,9 +92,13 @@ export const StatsSectionDescription = styled.p`
 
 export const StatsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
   margin-top: 3rem;
+
+  @media (max-width: 1200px) {
+    gap: 1.25rem;
+  }
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
@@ -127,6 +131,8 @@ export const StatCard = styled.div<{ $background: string }>`
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
 
   &::before {
     content: '';
@@ -210,12 +216,16 @@ export const StatDescription = styled.p`
 `;
 
 export const StatValue = styled.div`
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
-  margin-top: 1rem;
+  margin-top: auto;
+  margin-bottom: 0;
   letter-spacing: -0.02em;
   position: relative;
-  display: inline-block;
+  display: block;
+  text-align: left;
+  line-height: 1;
+  height: 4rem;
   
   &::after {
     content: '';
@@ -233,8 +243,12 @@ export const StatValue = styled.div`
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  @media (max-width: 1200px) {
+    font-size: 3.5rem;
+  }
+
   @media (max-width: 1024px) {
-    font-size: 2.75rem;
+    font-size: 3rem;
   }
 
   @media (max-width: 768px) {
