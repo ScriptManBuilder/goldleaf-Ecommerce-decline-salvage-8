@@ -32,11 +32,11 @@ export const WhyRecoveryDescription = styled.p`
   color: #4a5568;
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2rem;
 
   @media (max-width: 768px) {
     font-size: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 `;
 
@@ -45,7 +45,7 @@ export const StatHighlight = styled.span`
   font-weight: 700;
   color: #8B5CF6;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 
   @media (max-width: 768px) {
     font-size: 1.25rem;
