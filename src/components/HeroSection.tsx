@@ -39,11 +39,11 @@ const HeroSection: React.FC = () => {
         </HeroDescription>
         <Tagline>We specialize in serving merchants who acquire customers through <strong style={{color: '#A78BFA'}}>e-commerce platforms</strong>. Our decline recovery technology is optimized for businesses using online stores, digital checkout flows, and web-based transaction processing.</Tagline>
         <CTAButtonGroup>
-          <CTAButtonPrimary onClick={handleRequestDemo}>
+          {/* <CTAButtonPrimary onClick={handleRequestDemo}>
             Request a Demo
-          </CTAButtonPrimary>
+          </CTAButtonPrimary> */}
           <CTAButtonSecondary onClick={handleSpeakToSales}>
-            Speak to Sales
+            Schedule a Call
           </CTAButtonSecondary>
         </CTAButtonGroup>
         <Highlight>We serve only e-commerce clients.</Highlight>
